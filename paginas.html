@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=PT+Sans:wght@400;700&display=swap" 
+    crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preload" href="styles/styles.css" as="style">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+
+    <title>DesignerWeb</title>
+</head>
+<body>
+    <header class="header">
+        
+        
+        <div class="nav-bg">
+            <a class="logo" href="index.html"> <img class="logo" src="img/logo-dw.jpg" alt="logo-web"></a>
+            <nav class="navegacion">
+                <a href="index.html" class="navegacion_enlace">Inicio</a>
+                <a href="servicios.html" class="navegacion_enlace">Servicios</a>
+                
+                
+            </nav>
+        </div>
+        
+        <section class="hero">
+            <div class="contenido-hero">
+                <h2>Diseño y Desalloro Web</h2>
+                <p>Pablo Curbelo</p>
+
+            </div>
+
+        </section>      
+       
+</header>
+
+
+<div class="contenedor contenido-principal">
+        <h3 class="entrada__web">Paginas Creadas</h3>
+        <hr>
+   
+    </div>
+   
+    <!-- Demo styles -->
+    <style>
+     
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+       
+      }
+  
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+       
+      }
+    </style>
+  
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="https://mividaminimalista.com" target="_blank">
+          <img src="img/blog.png" />
+        </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="img-appsalon.html">
+                <img src="img/App salon.png" />
+              </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="img-festival.html">
+          <img src="img/festival de musicas.png" />
+        </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="img-blogcafe.html">
+          <img src="img/blog de cafe.png" />
+        </a>
+        </div>
+      
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  
+	</div>
+
+    <div class="btn-wsp">
+        <a href="https://wa.me/598092179331"  target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+            </svg>
+                </a>
+        </div>
+<p class="parrafo-pagina">(Algunas paginas son meramentes ilusatrativas, nada mas es para que tengan un ejemplo
+    de como se verán..)</p>
+
+<script src="js/modernizr.js"></script>
+
+</body>
+</html>
